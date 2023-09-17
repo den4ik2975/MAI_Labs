@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 #Создадим папку и перейдем в нее
 mkdir laboratoryWork
 cd laboratoryWork/
@@ -8,22 +8,23 @@ touch index logs
 
 # Сделаем небольшое форматирование для индекса и посмторим что получилось
 { pwd; echo; echo "Files:"; } >> index
-cat index
 
-# Добавим в индекс файл логс и посмотрим что получилось
+# Добавим в индекс файл логс
 stat -c "%n - %sb (%U)" logs >> index
-cat index
 
-# Добавляем наши действия в логи и опять посмотрим
+# Добавляем наши действия в логи и посмотрим
 echo "$(whoami) - Created and formated index" >> logs
 echo "$(whoami) - Created logs and added it to index" >> logs
 cat logs
+echo
 
 # Создаем файлы animals food tickets и добаляем их в индекс
 touch animals food tickets
 stat -c "%n - %sb (%U)" animals >> index
 stat -c "%n - %sb (%U)" food >> index
 stat -c "%n - %sb (%U)" tickets >> index
+cat index
+echo
 
 # Добавляем логи
 echo "$(whoami) - Created animals food tickets" >> logs
@@ -38,6 +39,8 @@ Dog
 Cat
 Cat
 Dog" >> animals
+cat animals
+echo
 
 # Так как размер файла с животными изменился, нужно измениь его и в индексе
 # Удаляем старую запись о файле
@@ -45,7 +48,6 @@ grep -v "animals" index > temp && mv temp index
 
 # Добаляем обновленную информацию в начало списка файлов и проверим
 { head -n 3 index; echo "$(stat -c "%n - %sb (%U)" animals)"; tail -n +4 index; } > temp && mv temp index
-cat index
 
 # Логи
 echo "$(whoami) - Added animals food tickets to index" >> logs
@@ -54,6 +56,8 @@ echo "$(whoami) - Updated info about animals in index" >> logs
 
 # Удаляем всех собак и сортируем файл
 cat animals | grep -v Dog | sort > temp && mv temp animals
+cat animals
+echo
 
 # Опять обновим инфу о файле 
 grep -v "animals" index > temp && mv temp index
@@ -65,7 +69,6 @@ echo "$(whoami) - Updated info about animals in index" >> logs
 
 # Файл с едой вдруг стал не нужен, удаляем его и не забываем про индекс
 rm food
-ls
 grep -v "food" index > temp && mv temp index
 
 # И снова добавляем логи 
