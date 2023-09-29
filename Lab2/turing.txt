@@ -1,0 +1,238 @@
+//Copy number 1
+0, ,<,thr_fr
+
+thr_fr,0,<,thr_fr #through_first/second
+thr_fr,1,<,thr_fr
+thr_fr, ,<,thr_sc
+
+thr_sc,0,<,thr_sc
+thr_sc,1,<,thr_sc
+thr_sc, ,=,start_copy
+
+start_copy, ,>,copy
+start_copy,0,>,copy
+start_copy,1,>,copy
+
+copy,0, ,mov_ret_sc_0 #move_return_second/first
+copy,1, ,mov_ret_sc_1
+copy, ,>,go_st_2
+
+mov_ret_sc_0, ,>,ret_sc_0 #return_second/first
+mov_ret_sc_1, ,>,ret_sc_1
+
+ret_sc_0,0,>,ret_sc_0
+ret_sc_0,1,>,ret_sc_0
+ret_sc_0, ,>,ret_fr_0
+
+ret_sc_1,0,>,ret_sc_1
+ret_sc_1,1,>,ret_sc_1
+ret_sc_1, ,>,ret_fr_1
+
+ret_fr_0,0,>,ret_fr_0
+ret_fr_0,1,>,ret_fr_0
+ret_fr_0, ,>,ret_cp_0
+
+ret_cp_0,0,>,ret_cp_0
+ret_cp_0,1,>,ret_cp_0
+ret_cp_0, ,=,place_0
+
+ret_fr_1,0,>,ret_fr_1
+ret_fr_1,1,>,ret_fr_1
+ret_fr_1, ,>,ret_cp_1
+
+ret_cp_1,0,>,ret_cp_1
+ret_cp_1,1,>,ret_cp_1
+ret_cp_1, ,=,place_1
+
+place_0, ,0,st_0 #start
+place_1, ,1,st_1
+
+st_0,0,<,st_0
+st_0,1,<,st_0
+st_0, ,<,thr_fr_0
+
+st_1,0,<,st_1
+st_1,1,<,st_1
+st_1, ,<,thr_fr_1
+
+thr_fr_0,0,<,thr_fr_0
+thr_fr_0,1,<,thr_fr_0
+thr_fr_0, ,<,thr_sc_0
+
+thr_sc_0,0,<,thr_sc_0
+thr_sc_0,1,<,thr_sc_0
+thr_sc_0, ,=,plc_bck_0 # place_back_0/1
+
+plc_bck_0, ,0,start_copy
+
+thr_fr_1,0,<,thr_fr_1
+thr_fr_1,1,<,thr_fr_1
+thr_fr_1, ,<,thr_sc_1
+
+thr_sc_1,0,<,thr_sc_1
+thr_sc_1,1,<,thr_sc_1
+thr_sc_1, ,=,plc_bck_1
+
+plc_bck_1, ,1,start_copy
+
+go_st_2,0,>,go_st_2
+go_st_2,1,>,go_st_2
+go_st_2, ,>,go_st_1
+
+go_st_1,0,>,go_st_1
+go_st_1,1,>,go_st_1
+go_st_1, ,=,0_2
+
+
+//Copy number 2
+0_2, ,<,thr_fr_2
+
+thr_fr_2,0,<,thr_fr_2 #through_first/second
+thr_fr_2,1,<,thr_fr_2
+thr_fr_2, ,<,thr_sc_2
+
+thr_sc_2,0,<,thr_sc_2
+thr_sc_2,1,<,thr_sc_2
+thr_sc_2, ,=,start_copy_2
+
+start_copy_2, ,>,copy_2
+start_copy_2,0,>,copy_2
+start_copy_2,1,>,copy_2
+
+copy_2,0, ,mov_ret_sc_0_2 #move_return_second/first
+copy_2,1, ,mov_ret_sc_1_2
+copy_2, ,>,go_st_2_2
+
+mov_ret_sc_0_2, ,>,ret_sc_0_2 #return_second/first
+mov_ret_sc_1_2, ,>,ret_sc_1_2
+
+ret_sc_0_2,0,>,ret_sc_0_2
+ret_sc_0_2,1,>,ret_sc_0_2
+ret_sc_0_2, ,>,ret_fr_0_2
+
+ret_sc_1_2,0,>,ret_sc_1_2
+ret_sc_1_2,1,>,ret_sc_1_2
+ret_sc_1_2, ,>,ret_fr_1_2
+
+ret_fr_0_2,0,>,ret_fr_0_2
+ret_fr_0_2,1,>,ret_fr_0_2
+ret_fr_0_2, ,>,ret_cp_0_2
+
+ret_cp_0_2,0,>,ret_cp_0_2
+ret_cp_0_2,1,>,ret_cp_0_2
+ret_cp_0_2, ,=,place_0_2
+
+ret_fr_1_2,0,>,ret_fr_1_2
+ret_fr_1_2,1,>,ret_fr_1_2
+ret_fr_1_2, ,>,ret_cp_1_2
+
+ret_cp_1_2,0,>,ret_cp_1_2
+ret_cp_1_2,1,>,ret_cp_1_2
+ret_cp_1_2, ,=,place_1_2
+
+place_0_2, ,0,st_0_2 #start
+place_1_2, ,1,st_1_2
+
+st_0_2,0,<,st_0_2
+st_0_2,1,<,st_0_2
+st_0_2, ,<,thr_fr_0_2
+
+st_1_2,0,<,st_1_2
+st_1_2,1,<,st_1_2
+st_1_2, ,<,thr_fr_1_2
+
+thr_fr_0_2,0,<,thr_fr_0_2
+thr_fr_0_2,1,<,thr_fr_0_2
+thr_fr_0_2, ,<,thr_sc_0_2
+
+thr_sc_0_2,0,<,thr_sc_0_2
+thr_sc_0_2,1,<,thr_sc_0_2
+thr_sc_0_2, ,=,plc_bck_0_2 # place_back_0/1
+
+plc_bck_0_2, ,0,start_copy_2
+
+thr_fr_1_2,0,<,thr_fr_1_2
+thr_fr_1_2,1,<,thr_fr_1_2
+thr_fr_1_2, ,<,thr_sc_1_2
+
+thr_sc_1_2,0,<,thr_sc_1_2
+thr_sc_1_2,1,<,thr_sc_1_2
+thr_sc_1_2, ,=,plc_bck_1_2
+
+plc_bck_1_2, ,1,start_copy_2
+
+go_st_2_2,0,>,go_st_2_2
+go_st_2_2,1,>,go_st_2_2
+go_st_2_2, ,>,go_st_1_2
+
+go_st_1_2,0,>,go_st_1_2
+go_st_1_2,1,>,go_st_1_2
+go_st_1_2, ,=,sh_st
+
+
+//Do shift
+sh_st, ,<,cnt
+
+cnt,1,0,mov_r_cnt
+cnt,0,<,cnt
+cnt, ,>,del_nuls
+
+minus,0,1,mov_r_minus
+minus, ,<,mov_to_shift
+
+mov_r_minus,1,>,minus
+
+mov_r_cnt,0,>,minus
+
+mov_to_shift,1,<,mov_to_shift
+mov_to_shift,0,<,mov_to_shift
+mov_to_shift, ,<,pass_spaces
+
+pass_spaces, ,<,pass_spaces
+pass_spaces,0,=,shift_start
+pass_spaces,1,=,shift_start
+
+shift_start,1,0,mov_shift_1
+shift_start,0,0,mov_shift_0
+shift_start, ,>,return_to_first
+
+mov_shift_1,0,<,was_1
+mov_shift_1,1,<,was_1
+
+mov_shift_0,0,<,was_0
+mov_shift_0,1,<,was_0
+
+was_1,0,1,mov_shift_0
+was_1,1,1,mov_shift_1
+was_1, ,>,return_to_first
+
+was_0,0,0,mov_shift_0
+was_0,1,0,mov_shift_1
+was_0, ,>,return_to_first
+
+return_to_first,0,>,return_to_first
+return_to_first,1,>,return_to_first
+return_to_first, ,>,pass_spaces_2
+
+pass_spaces_2, ,>,pass_spaces_2
+pass_spaces_2,0,=,del_nuls
+pass_spaces_2,1,=,del_nuls
+
+del_nuls,0, ,mov_del_nuls
+del_nuls,1,=,return_to_second
+del_nuls, ,=,go_off
+
+mov_del_nuls, ,>,del_nuls
+
+return_to_second,0,>,return_to_second
+return_to_second,1,>,return_to_second
+return_to_second, ,=,sh_st
+
+
+
+
+go_off, ,<,go_off
+go_off,0,>,turn_off
+go_off,1,>,turn_off
+
+turn_off, ,#,turn_off
