@@ -75,6 +75,7 @@ i: -17 j:   0, l:  41
 Stopped on iteration: 22
 Final variables i: -6, j: 10, k: 80
 ```
+![alt text](https://github.com/den4ik2975/MAI_Labs/blob/main/Lab5/triangle.png?raw=true)
 
 ## 9. Дневник отладки
 
