@@ -65,7 +65,7 @@ int main() {
         }
     }
 
-    if (state == HEX_SCAN) {
+    if (state == HEX_SCAN || HEX_SAVE) {
         state = LAST_SAVE;
         current_hex[index_counter] = '\0';
         strcpy(penultimate_hex, last_hex);
