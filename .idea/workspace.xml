@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dbb628b3-a0e3-424b-9300-d7783591074b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Lab1/task.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Отчет.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/turing.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/отчет.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/Lab3.jdtp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/images/increment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/images/main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/images/mvl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/images/mvr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/Отчет по Диаграммеру Тьюринга.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/Отчет.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/rules2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/Отчет.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5/report.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5/triangle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5/var.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/KA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/Отчет.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab7/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab7/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab7/Отчет7.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab8/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab8/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab8/ОтчетКА (1).md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2dSsl74j8QiWtLnKmWivnypuqgD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbb628b3-a0e3-424b-9300-d7783591074b" name="Changes" comment="" />
+      <created>1710012962121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710012962121</updated>
+      <workItem from="1710012965663" duration="8000" />
+      <workItem from="1710013017041" duration="789000" />
+      <workItem from="1710013886007" duration="7000" />
+      <workItem from="1710013914413" duration="5000" />
+      <workItem from="1710078042476" duration="2129000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
