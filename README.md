@@ -1,2 +1,4 @@
-Лабы 8 института МАИ
-S2L2 работает только на винде!
+# Laborotary work for 8 institute MAI
+
+Here you can see informatics laboratory works written mostly on C
+Works are separated by semester
